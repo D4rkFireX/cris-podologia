@@ -1,0 +1,180 @@
+@media (max-width: 1080px) {
+  .cabecalho {
+    width: 410px;
+    padding-top: 5px;
+  }
+
+  .cabecalho-titulo {
+    text-align: center;
+    width: 200px;
+  }
+
+  .cabecalho-titulo h1 {
+    font-size: 24px;
+  }
+
+  #logo {
+    width: 76px;
+  }
+
+  #foto-cris {
+    width: 58px;
+  }
+
+  .header-mensagem {
+    width: 410px;
+  }
+
+  .header-mensagem h2 {
+    font-size: 25px;
+  }
+
+  #header-hr {
+    width: 370px;
+  }
+
+  .main-imagem {
+    height: 240px;
+  }
+
+.caixa-serviços {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  text-align: center;
+  max-width: 1200px;
+  margin: auto;
+  gap: 40px;
+  /* gap: 72px; */
+  padding: 20px;
+}
+
+.caixa-serviços h2 {
+  font-size: 29px;
+  width: 330px;
+}
+
+.serviços-caixas {
+  width: 340px;
+  height: 140px;
+  border: 1px outset white;
+  overflow: hidden;
+  padding: 10px;
+  font-size: 17px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.623);
+}
+
+.div-linha hr {
+  width: 370px;
+  border: 1px outset white;
+  box-shadow: 0 0 10px;
+}
+
+  .fotos-img {
+  flex-shrink: 0;
+  width: 270px;
+  height: 370px;
+  margin-right: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Informações do footer */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    padding-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer-informacoes{
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+}
+
+.div-esquerda{
+    display: flex;
+    gap: 28px;
+    align-items: center;
+}
+
+.div-esquerda img{
+  width: 180px;
+}
+
+.div-esquerda-texto{
+    width: 200px;
+    font-size: 19px;
+    font-family: bold;
+}
+
+
+.div-direita{
+    display: flex;
+    gap: 30px;
+}
+
+#div-direita-texto-sobre{
+  width: 180px;
+}
+
+.div-direita-sobre h1{
+    text-align: center;
+}
+
+.div-direita-sobre div p{
+  text-align: left;
+  font-size: 20px;
+}
+
+.div-direita-contato{
+    text-align: left;
+}
+
+.div-direita-titulos{
+    font-size: 30px;
+}
+
+#div-direita-titulo-contato{
+    text-align: center;
+}
+
+#whats{
+    display: flex;
+    font-size: 15px;
+}
+
+#insta{
+    display: flex;
+    font-size: 15px;
+}
+
+#whats-img{
+  width: 69px;
+}
+
+#insta-img{
+  width: 60px;
+}
+
+.localizacao iframe{
+  width: 390px;
+  height: 270px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.footer-direitos{
+    display: flex;
+    align-items: flex-end;
+    font-size: 13px;
+}
+
+}

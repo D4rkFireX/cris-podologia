@@ -1,0 +1,345 @@
+/* Uma keyframe em CSS é um conjunto de regras que define os estados intermediários de uma animação.
+*  Logo após defini-la, usar a propriedade "animation".*/
+@keyframes slideFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeSlideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+body {
+  margin: 0;
+}
+
+.conteudo {
+  background-color: #3d4435;
+  color: white;
+}
+
+header {
+  height: 450px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header .cabecalho {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #5c7b6190;
+  animation: fadeSlideDown 1.6s ease-in-out;
+}
+
+#header-hr {
+  width: 1200px;
+  border: 1px outset white;
+  box-shadow: 0 0 10px;
+}
+
+.cabecalho-titulo h1 {
+  font-size: 30px;
+}
+
+.cabecalho img {
+  border-radius: 8px;
+}
+
+.header-mensagem {
+  height: 260px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.header-mensagem h2{
+  animation: slideFromLeft 1s ease-out forwards;
+}
+
+.main-imagem {
+  display: flex;
+  justify-content: center;
+  height: 600px;
+}
+
+.mensagem-serviço {
+  display: flex;
+  justify-content: center;
+  font-size: 35px;
+  padding: 30px;
+
+  /* Adicionados para animação */
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.6s ease-out;
+}
+
+.mensagem-serviço.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.caixa-serviços {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  text-align: center;
+  max-width: 1200px;
+  margin: auto;
+  gap: 40px;
+  /* gap: 72px; */
+  padding: 20px;
+}
+
+.caixa-serviços h2 {
+  font-size: 29px;
+}
+
+.serviços-caixas {
+  width: 340px;
+  height: 140px;
+  border: 1px outset white;
+  overflow: hidden;
+  padding: 10px;
+  font-size: 17px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.623);
+}
+
+.div-linha {
+  display: flex;
+}
+
+#linha-cima {
+  margin-top: 60px;
+}
+
+.div-linha hr {
+  width: 1300px;
+  border: 1px outset white;
+  box-shadow: 0 0 10px;
+}
+
+#linha-baixo {
+  margin-top: 80px;
+}
+
+.fotos {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  padding: 20px 0;
+}
+
+.fotos-track {
+  display: flex;
+  width: fit-content;
+  animation: slideLeft 25s linear infinite;
+}
+
+.fotos-img {
+  flex-shrink: 0;
+  width: 300px;
+  height: 500px;
+  margin-right: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.fotos-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
+/* Footer */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: black;
+    padding-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer-informacoes{
+    display: flex;
+    justify-content: space-between;
+    width: 1600px;
+}
+
+.div-esquerda{
+    display: flex;
+    gap: 290px;
+}
+
+.div-esquerda-texto{
+    width: 280px;
+    font-size: 20px;
+    font-family: bold;
+}
+
+.div-direita{
+    display: flex;
+    gap: 200px;
+}
+
+.div-direita-sobre{
+    text-align: center;
+}
+
+.div-direita-contato{
+    text-align: left;
+}
+
+.div-direita-titulos{
+    font-size: 30px;
+}
+
+#div-direita-titulo-contato{
+    text-align: center;
+}
+
+#whats{
+    display: flex;
+    font-size: 20px;
+}
+
+#insta{
+    display: flex;
+    font-size: 20px; 
+}
+
+#insta a{
+    margin-left: 49px;
+}
+
+.footer-direitos{
+    display: flex;
+    align-items: flex-end;
+}
+
+
+
+
+
+/* footer {
+  background-color: rgba(0, 0, 0, 0.866);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#footer-informacoes {
+  width: 1650px;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-ilustre {
+  display: flex;
+  justify-content: space-between;
+  width: 750px;
+}
+
+#ilustre-texto {
+  width: 330px;
+  text-align: left;
+  font-size: 24px;
+}
+
+#footer-caixas-informacoes {
+  width: 640px;
+  display: flex;
+  justify-content: space-between;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.caixas {
+  padding: 8px;
+}
+
+#footer-sobre {
+  text-align: center;
+  width: 240px;
+}
+
+.h1-informacoes {
+  text-align: center;
+  font-size: 40px;
+}
+
+.p-informacoes {
+  font-size: 19px;
+}
+
+#footer-contato {
+  width: 360px;
+}
+
+.whats {
+  display: flex;
+}
+
+.whats a {
+  margin-left: 40px;
+}
+
+.insta {
+  display: flex;
+}
+
+.localizacao {
+  width: 430px;
+  height: 230px;
+  padding: 10px;
+}
+
+#footer-direitos {
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+} */
+
+/* footer{
+  height: 30px;
+  color: white;
+  background-color: black;
+  font-family: 'Times New Roman', Times, serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
