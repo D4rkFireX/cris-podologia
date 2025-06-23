@@ -177,4 +177,17 @@ footer{
     font-size: 13px;
 }
 
+.footer-hr{
+  width: 380px;
+}
+
+.footer-h1{
+  font-size: 30px;
+}
+
+.localizacao{
+  margin-top: 5px;
+  margin-bottom: 25px;
+}
+
 }

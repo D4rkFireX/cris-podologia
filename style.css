@@ -250,7 +250,20 @@ footer{
     align-items: flex-end;
 }
 
+.footer-hr{
+  width: 1850px;
+  border: 1px outset white;
+  box-shadow: 0 0 10px;
+}
 
+.footer-h1{
+  font-size: 30px;
+}
+
+.localizacao{
+  margin-top: 45px;
+  margin-bottom: 25px;
+}
 
 
 
