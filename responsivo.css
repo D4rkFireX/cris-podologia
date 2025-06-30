@@ -73,14 +73,7 @@
   box-shadow: 0 0 10px;
 }
 
-  .fotos-img {
-  flex-shrink: 0;
-  width: 270px;
-  height: 370px;
-  margin-right: 20px;
-  border-radius: 10px;
-  overflow: hidden;
-}
+
 
 /* Informações do footer */
 
