@@ -5,8 +5,11 @@
   }
 
   .cabecalho-titulo {
-    text-align: center;
     width: 200px;
+  }
+
+  .cabecalho-titulo h1, p{
+  margin: 0;
   }
 
   .cabecalho-titulo h1 {
@@ -33,8 +36,9 @@
     width: 370px;
   }
 
+  /* Para celular o width era de 240px */
   .main-imagem {
-    height: 240px;
+    height: 320px;
   }
 
 .caixa-serviços {
@@ -78,12 +82,12 @@
 /* Informações do footer */
 
 footer{
+  font-family: Arial, Helvetica, sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: black;
     padding-top: 30px;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 .footer-informacoes{
@@ -111,7 +115,7 @@ footer{
 
 .div-direita{
     display: flex;
-    gap: 30px;
+    gap: 0;
 }
 
 #div-direita-texto-sobre{
@@ -129,6 +133,10 @@ footer{
 
 .div-direita-contato{
     text-align: left;
+}
+
+#rede-insta{
+  display: inline-block;
 }
 
 .div-direita-titulos{
@@ -155,6 +163,7 @@ footer{
 
 #insta-img{
   width: 60px;
+  margin-right: 4px;
 }
 
 .localizacao iframe{
@@ -182,5 +191,4 @@ footer{
   margin-top: 5px;
   margin-bottom: 25px;
 }
-
 }

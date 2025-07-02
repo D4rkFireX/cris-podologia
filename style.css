@@ -50,6 +50,14 @@ header .cabecalho {
   box-shadow: 0 0 10px;
 }
 
+.cabecalho-titulo{
+  text-align: center;
+}
+
+.cabecalho-titulo h1, p{
+  margin: 10px;
+}
+
 .cabecalho-titulo h1 {
   font-size: 30px;
 }
@@ -72,10 +80,11 @@ header .cabecalho {
   animation: slideFromLeft 1s ease-out forwards;
 }
 
+/* Antes para pc o width era de 600px */
 .main-imagem {
   display: flex;
   justify-content: center;
-  height: 600px;
+  height: 650px;
 }
 
 .mensagem-serviço {
@@ -193,7 +202,7 @@ footer{
 
 .div-esquerda{
     display: flex;
-    gap: 290px;
+    gap: 140px;
 }
 
 .div-esquerda-texto{
@@ -204,11 +213,15 @@ footer{
 
 .div-direita{
     display: flex;
-    gap: 200px;
+    gap: 100px;
 }
 
 .div-direita-sobre{
-    text-align: center;
+  width: 220px;
+}
+
+.div-direita-sobre p{
+  font-size: 18px;
 }
 
 .div-direita-contato{
@@ -216,6 +229,7 @@ footer{
 }
 
 .div-direita-titulos{
+  text-align: center;
     font-size: 30px;
 }
 
